@@ -1,0 +1,43 @@
+/*
+Nama : Achmad Cahyo Widodo
+Kelas : X RPL 1 / 05 
+ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(117, 47, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.kalkulator{
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 15%;
+    border-radius: 30px;
+    background-color: rgb(194, 147, 45);
+    display: flex;
+    height: 300px;
+    width: 30%;
+}
+
+.text{
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15px;
+    border: 3px solid;
+    text-align: left;
+    height: 35px;
+}
+
+.in{
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    margin-top: 0%;
+    margin-left: 20px;
+}

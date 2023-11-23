@@ -1,0 +1,53 @@
+<!-- 
+    Nama : Achmad Cahyo Widodo
+    Kelas : X RPL 1 / 05
+ -->
+<html>
+    <head>
+        <title>Kalkulator APP</title>
+        <link rel="stylesheet" href="Kalkulator.css">
+    </head>
+    <body>
+        <table align="center" class="kalkulator" style="padding-left: 20px;">
+            <tr>
+                <td><h3 style="padding: 15px; text-align: center;">Kalkulator Sederhana</h3></td>
+            </tr>
+            <tr>
+                <td class="text">Masukkan Angka Pertama</td>
+                <td><input type="text" id="angka1" placeholder="Masukkan Angka" class="in"></td>
+            </tr>
+            <tr>
+                <td class="text" style="height: 50px;">Masukkan Metode</td>
+                <td>
+                    <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="text">Masukkan Angka Kedua</td>
+                <td><input type="text" id="angka2" placeholder="Masukkan Angka" class="in"></td>
+            </tr>
+            <tr>
+                <td class="text" style="text-align: center; background-color: rgb(235, 245, 97);"><span id="hasil">Hasil</span></td>
+            </tr>
+            <tr>
+                <td><button id="hitung">Hitung</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
+<script>
+    const angka1 = document.getElementById('angka1')
+    const angka2 = document.getElementById('angka2')
+    const operator= document.getElementById('operator')
+    const hasil = document.getElementById('hasil')
+    const hitung = document.getElementById('hitung')
+
+    hitung.addEventListener('click', function(){
+        hasil.innerText = eval(angka1.value + operator.value + angka2.value)
+    })
+</script>
